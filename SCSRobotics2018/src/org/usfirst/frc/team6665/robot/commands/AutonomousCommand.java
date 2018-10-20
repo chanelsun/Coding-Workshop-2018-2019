@@ -89,7 +89,7 @@ public class AutonomousCommand extends Command {
     	//}
 		//else if(timer.get()==6&&gameData.charAt(0)=='R'&&side==2) {
 			//Robot.claw.clawOpen();
-		//}
+		//} it means that if the previous one runs false, the following code will run
         }
        // while(timer.get() <= (time + 2)) {
         	//Robot.driveTrain.differentialDrive1.arcadeDrive(0, 0.5); //rotate

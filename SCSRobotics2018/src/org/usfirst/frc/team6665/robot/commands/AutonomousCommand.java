@@ -55,14 +55,35 @@ public class AutonomousCommand extends Command {
     @Override
     protected void execute() {
     	
-    	if(timer.get()<=5) {
+    	if(timer.get()<=3) {
     	    System.err.println("autoEx ran");
             Robot.driveTrain.differentialDrive1.arcadeDrive(-0.7,0);//drive "forward"
         	// (speed/output from motor,rotation angle)
         	}
-        else{
-	    Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//stop movement
+        else if(timer.get()<=5){
+	    Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn
 	}
+	else if(timer.get()<=8) {
+	      Robot.driveTrain.differentialDrive1.arcadeDrive(-0.7,0)//drive "forward"
+	}
+	 else if(timer.get()<=10){
+	    Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn
+	}
+	 else if(timer.get()<=13) {
+	      Robot.driveTrain.differentialDrive1.arcadeDrive(-0.7,0)//drive "forward"
+	}
+	 else if(timer.get()<=15) {
+	      Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5)//turn	   
+	}   
+	 else if(timer.get()<=18) {
+	      Robot.driveTrain.differentialDrive1.arcadeDrive(-0.7,0)//drive "forward"
+	}
+	 else{
+	      Robot.driveTrain.differentialDrive1.arcadeDrive(0,0)//drive "forward"
+	}
+		 
+	   
+		   	      
 		//if(timer.get()==6&&gameData.charAt(0)=='L'&&side==1){
     		//Robot.claw.clawOpen();
     	//}

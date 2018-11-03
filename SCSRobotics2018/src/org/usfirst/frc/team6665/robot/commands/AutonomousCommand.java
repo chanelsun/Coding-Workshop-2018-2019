@@ -67,13 +67,13 @@ public class AutonomousCommand extends Command {
        Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
  }
   else if(timer.get()<=9){
-     Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn
+     Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn "right"
  }
   else if(timer.get()<=12) {
        Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
  }
   else if(timer.get()<=13.5) {
-       Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn   
+       Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//turn
  }  
   else if(timer.get()<=16.5) {
        Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
@@ -81,9 +81,66 @@ public class AutonomousCommand extends Command {
   else{
        Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//drive "forward"
  }
-  
-   
-           
+  //positive "right" negative "left"
+ 
+    //2018.11.03
+    if(timer.get()<=2.72) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);//drive "forward"
+     } 
+    else if(timer.get()<=4.22) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);
+     }//turn 
+    else if(timer.get()<=6.49) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }
+    else if(timer.get()<=7.99) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);
+     }//turn 
+    else if(timer.get()<=8.8) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }
+    else if(timer.get()<=10.3) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,-0.5);
+     }//turn 
+    else if(timer.get()<=11.66) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }
+    else if(timer.get()<=13.16) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,-0.5);
+     }//turn 
+    else if(timer.get()<=17.43) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }
+    else if(timer.get()<=18.93) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,-0.5);
+     }//turn 
+    else if(timer.get()<=24.19) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }     
+     else if(timer.get()<=25.69) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(0,-0.5);
+     }//turn 
+    else if(timer.get()<=31.54) {
+         System.err.println("autoEx ran");
+            Robot.driveTrain.differentialDrive1.arcadeDrive(-0.6,0);
+     }
+    else{
+       Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);
+     }
+
+     
   //if(timer.get()==6&&gameData.charAt(0)=='L'&&side==1){
       //Robot.claw.clawOpen();
      //}
